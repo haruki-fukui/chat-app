@@ -1,4 +1,4 @@
 class RoomUser < ApplicationRecord
-  has_many :rooms_users
-  has_many :users,through: :room_users
+  belongs_to :room
+  belongs_to :user
 end
